@@ -23,7 +23,7 @@ st.title("🖨️ 3D Print Cost Calculator")
 st.markdown("Estimate the **customer price**, **maker cost**, and **profit** of your 3D prints.")
 
 # Inputs
-grams = st.number_input("📦 Grams of filament used:", min_value=0, step=1)
+grams = st.number_input("📦 Grams of filament used:", min_value=0, step=5)
 hours = st.number_input("⏱️ Hours of printing time:", min_value=0, step=1)
 filament_type = st.selectbox("🎯 Filament Type", ["PLA", "PETG", "TPU"])
 cost_per_hour = st.number_input("💵 Cost per Hour ($):", min_value=0.0, step=0.5)
