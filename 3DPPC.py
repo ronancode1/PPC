@@ -4,14 +4,14 @@ import altair as alt
 
 def calculate_cost(grams, hours, filament_type, cost_per_hour):
     if filament_type == "PLA":
-        customer_price = ((grams * 6 + hours * (cost_per_hour * 100)) / 100)
-        maker_price = (grams * 2.6 / 100)
+        customer_price = round(((grams * 6 + hours * (cost_per_hour * 100)) / 100))
+        maker_price = round((grams * 2.6 / 100))
     elif filament_type == "PETG":
-        customer_price = ((grams * 8 + hours * (cost_per_hour * 100)) / 100)
-        maker_price = (grams * 4.1 / 100)
+        customer_price = round(((grams * 8 + hours * (cost_per_hour * 100)) / 100))
+        maker_price = round((grams * 4.1 / 100))
     elif filament_type == "TPU":
-        customer_price = ((grams * 10 + hours * (cost_per_hour * 100)) / 100)
-        maker_price = (grams * 5.4 / 100)
+        customer_price = round(((grams * 10 + hours * (cost_per_hour * 100)) / 100))
+        maker_price = round((grams * 5.4 / 100))
     else:
         customer_price = maker_price = 0
 
